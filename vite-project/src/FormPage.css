@@ -1,0 +1,258 @@
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+.Content{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+.Header{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 6rem;
+    border-bottom: 2px solid black;
+}
+
+.Header-text1{
+    padding-right: 1rem;
+    padding-bottom: 0;
+    font-size: 2rem;
+    
+    font-weight: bolder;
+}
+
+.Header-text2{
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Body {
+    margin-top: 5rem;
+    display: flex;
+    margin-left: 1.5rem;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.Body::-webkit-scrollbar {
+    display: none;  
+}
+
+.Column-1{
+    flex: 1;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    /* border : 1px solid red; */
+    margin-left: 4rem;
+    padding: 1rem;
+}
+
+.Column-2{
+    flex: 1;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    /* border : 1px solid red; */
+    padding: 1rem;
+}
+
+.Column-1 label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.Column-1 input {
+    display: block; 
+    text-align: left;
+    width: 70%; 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem ;
+}
+
+.Column-2 label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.Column-2 input {
+    display: block; 
+    width: 70%; 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem ;
+    text-align: left;
+}
+
+
+.Button {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.Button button {
+  width: 40%;
+  height: 3rem;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  font-weight: lighter;
+  border-radius: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;
+}
+
+form.Body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.Columns {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
+}
+
+.Column-1, .Column-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 350px;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    background-color: white;
+    border-radius: 12px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .popup-header {
+    padding: 20px 20px 10px 20px;
+    position: relative;
+  }
+  
+  .prediction-label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .prediction-result {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 16px;
+    line-height: 1;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .popup-illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 150px;
+  }
+  
+  .person-illustration {
+    width: 120px;
+    height: 150px;
+    background-color: #f0f0f0;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .person-illustration:before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    top: 20px;
+    left: 30px;
+  }
+  
+  .person-illustration:after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: #d0d0d0;
+    bottom: 0;
+    left: 20px;
+  }
+  
+  .popup-tip {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-top: 1px solid #eee;
+  }
+  
+  .tip-label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .tip-content {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #333;
+  }
